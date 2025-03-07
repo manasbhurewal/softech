@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#cookiePopup{
+    background-color: #ffffff;
+    position: absolute;
+    align-self: auto;
+    font-size: 14px;
+    width: 70vw;
+    max-width: 42.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: 'DM Sans';
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    transition: all 0.5s ease-in;
+    left: 60%;
+    top: 60%;
+}
+#cookiePopup img{
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+}
+#cookiePopup p{
+    text-align: center;
+    margin: 1.4em 0;
+}
+#cookiePopup button{
+    background-color: #6859fe;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+}
+#cookiePopup a{
+    color: #6859fe;
+}
+.hide{
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+}
+.show{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+}
+@media only screen and (max-width: 37.5em){
+    #cookiePopup{
+        width: 100%;
+    }
+    .hide{
+        bottom: 2em;
+        right: 0;
+    }
+    .show{
+        right:0;
+        bottom: 0;
+    }
+}
